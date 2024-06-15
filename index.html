@@ -13,6 +13,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
   <!-- End Google Tag Manager -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <!-- Materialize - Compiled and minified CSS-->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -21,7 +22,7 @@
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>ANUSHKA GOSWAMI | Software Developer</title>
-
+  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
   <script>
@@ -31,7 +32,8 @@
 
     gtag('config', 'UA-126939217-2');
   </script>
-
+  
+  
  </head>
 
 <body>
@@ -39,7 +41,17 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
   height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
-  
+  <!-- Light/Dark Mode Toggle Button -->
+   <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+  <i class="fas fa-sun"></i>
+  <i class="fas fa-moon"></i>
+   </button>
+   <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">

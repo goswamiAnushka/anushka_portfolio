@@ -1,3 +1,23 @@
+
+/* Color Palette */
+:root {
+  --primary-color: #f9fafa; /* Light Grey */
+  --secondary-color: #255876; /* Navy Blue */
+  --background-color: #d5d8d9; /* Light Grey */
+  --text-color: #333333; /* Dark Grey */
+  --accent-color: #f2b143; /* Golden Yellow */
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* Dark Mode Styles */
+.dark-mode {
+  --background-color: #333333; /* Dark Background */
+  --text-color: #FFFFFF; /* White Text */
+}
+
+/* Profile Picture Styles */
 .profile-pic {
   position: relative;
   max-width:130px;
@@ -5,13 +25,9 @@
   width: auto;
   height: auto;
   overflow: hidden;
-  /* display: inline-block; */
-  
-  
-  /* background-size: cover;  */
   margin: -21px; 
   margin-left: 15px;
-  border: 2px solid rgba(2, 26, 22, 0.4); 
+  border: 2px solid var(--secondary-color); 
   border-radius: 50% !important;
 }
 
@@ -20,20 +36,39 @@
   height: auto;
 }
 
-.tracker {
-  /* visibility: hidden; */
-  position: fixed;
-  /* margin-inline-end: auto;  */
-  bottom: 0; 
-  right: 0;
+/* Toggle Button for Dark Mode */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 9999;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+/* Toggle Button Icon */
+.dark-mode-toggle i {
+  transition: transform 0.3s ease;
+}
+
+/* Dark Mode Toggle Button Active State */
+.dark-mode-toggle.dark {
+  color: var(--primary-color);
+}
+
+/* Dark Mode Toggle Button Active Icon */
+.dark-mode-toggle.dark i {
+  transform: rotate(180deg);
+}
+
+/* Social Icons */
 .social {
   margin: 0 auto;
   width: auto;
   text-align: inherit;
-  /* padding: 10px; */
 }
 
 .icon-btn {
@@ -41,7 +76,7 @@
   width: 50px;
   height: 50px;
   border: 0;
-  color: #FFFFFF;
+  color: var(--background-color);
   cursor: pointer;
   font-size: 30px;
   line-height: 70px;
@@ -50,113 +85,85 @@
   margin: 4px;
 }
 
+/* Adjust Icon Colors */
 .github {
-  color: black;
+  color: var(--background-color);
 }
 
 .linkedin {
-  color: #0077b5;
+  color: var(--secondary-color);
 }
 
 .angellist {
-  color: grey;
+  color: var(--text-color);
 }
 
+/* Hover Effects for Icons */
 .icon-btn:hover {
   transform: scale(1.10);
-  color: #FFFFFF;
+  color: var(--background-color);
 }
 
 .linkedin:hover {
-  background-color: #0077b5;
+  background-color: var(--secondary-color);
 }
 
 .angellist:hover {
-  background-color: grey;
+  background-color: var(--text-color);
 }
 
 .github:hover {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 /* Buttons - Read Me, Contact Us */
-
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #fff;
-  color: #00796b;
-  border: 2px solid #fff;
+  background: var(--background-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--background-color);
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
-
-/* .readme:hover{
-  color: white;
-  background-color: #00796b;
-} */
 
 .contactme {
   position: relative;
   padding: 11px 35px;
   background: none;
-  color: #fff;
-  border: 2px solid #fff;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   margin-top: 1.5em;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
-.contactme:hover{
-  color: #00796b;
-  background-color: white;
+.contactme:hover {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
 }
-/* main body */
 
-/* body-color */
-
+/* Main Body */
 body {
-  color: #333;
+  color: var(--text-color);
   font-size: 18px;
 }
 
-/* body {
-  color: black;
-  font-size: 18px;
-} */
-
-/* main a -- links */
-
-/* a {
-  color: #009688;
-} */
-
+/* Main Links */
 a {
-  color: #004d40;
+  color: var(--primary-color);
 }
 
-/* main blockqoute */
-
-/* blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
-  font-size: 125%;
-  font-weight: 400;
-  margin: 20px 0;
-  padding-left: 1.5rem;
-} */
-
+/* Blockquote */
 blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
+  border-left: 5px solid var(--accent-color);
+  color: var(--accent-color);
   font-size: 125%;
   font-weight: 400;
   margin: 20px 0;
@@ -172,19 +179,12 @@ blockquote * {
   text-align: center;
 }
 
-/* main nav */
-
+/* Main Navigation */
 nav {
-  background: white;
+  background: var(--background-color);
   box-shadow: none;
   height: 0;
 }
-
-/* nav {
-  background: rgb(149, 126, 212);
-  box-shadow: none;
-  height: 0;
-} */
 
 nav i {
   padding: 0 15px;
@@ -192,13 +192,7 @@ nav i {
   top: 5px;
 }
 
-/* main */
-
-/* main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
-} */
-
+/* Main Content */
 main {
   background: url(../../assets/img/bg.png) repeat;
   padding-left: 190px;
@@ -227,41 +221,20 @@ ul.side-nav li {
   padding: 0;
 }
 
-/* ul.side-nav.fixed a {
-  box-sizing: content-box;
-  color: rgb(48, 122, 207);
-  display: block;
-  line-height: 100%;
-  padding: 10px 0 12px;
-} */
-
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: var(--primary-color);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
 }
 
-ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
-  border: none;
-  font-weight: 200;
-}
-
-/* ul.side-nav.fixed li.logo {
-  background-color: #fafafa;
-  border-bottom: 1px solid #ddd;
-  box-sizing: content-box;
-  min-height: 90px;
-  padding: 30px 30px 40px;
-} */
-
 ul.side-nav.fixed li.logo {
-  background-color: #fafafa;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--text-color);
   box-sizing: content-box;
   min-height: 90px;
-  padding: 30px 30px 40px;
+  padding: 30px;
 }
 
 ul.side-nav.fixed li.logo a {
@@ -269,16 +242,12 @@ ul.side-nav.fixed li.logo a {
   line-height: 100%;
 }
 
-ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
-  background-color: #fafafa;
-  border-left: 3px solid;
+ul.side-nav.fixed li.logo a.active, ul.side-nav.fixed li.logo a:hover {
+  border: none;
+  font-weight: 200;
 }
 
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
-  color: #333 !important;
-}
-
-li.logo span {
+ul.side-nav.fixed li.logo span {
   display: block;
   font-size: 14px;
 }
@@ -312,43 +281,27 @@ h3 {
   height: 100vh;
 }
 
-/* Original */
-
-/* #intro.section {
-  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
-  position: relative;
-} */
-
 #intro.section {
-  background: #a7ffeb repeat;
+  background: var(--primary-color) repeat;
   position: relative;
 }
 
 #intro.section .container {
-  color: white;
+  color: var(--background-color);
   font-weight: 200;
   left: 0;
   position: absolute;
   top: 0;
 }
 
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
-
 #intro.section .container *:not(span) {
   font-weight: 300;
-  /* font-weight: 400; */
   line-height: 150%;
-  /* padding: 0 0px; */
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid var(--accent-color);
 }
 
 #intro.section .teal {
@@ -365,8 +318,6 @@ h3 {
 }
 
 .waves-effect.waves-blue .waves-ripple {
-  /* The alpha value allows the text and background color
-   of the button to still show through. */
   background-color: rgba(33, 150, 243, 0.2);
 }
 
@@ -383,12 +334,12 @@ h3 {
 
 .card li a {
   margin-right: 0;
-  color: #333;
-  border-bottom: 2px solid #ffab40;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .card li a:hover {
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
 }
 
@@ -460,20 +411,23 @@ h3 {
 
 a.hoverline {
   border-bottom: 3px solid transparent !important;
-  padding: 3px 3px 0 3px;
-  transition: 0.25s all;
-  -moz-transition: 0.25s all;
-  -webkit-transition: 0.25s all;
+  display: inline-block;
+  position: relative;
 }
 
-/* main a.hoverline */
+a.hoverline::before {
+  background-color: var(--secondary-color);
+  bottom: -2px;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 100%;
+  transition: right 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
 
-/* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
-} */
-
-a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+a.hoverline:hover::before {
+  right: 0;
 }
 
 #skills .card.large {
@@ -481,7 +435,7 @@ a.hoverline:hover {
 }
 
 #skills h4 {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--background-color);
   margin-bottom: 30px;
   padding-bottom: 20px;
 }
@@ -502,7 +456,7 @@ a.hoverline:hover {
 }
 
 #experience .card-content .row {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--background-color);
   padding-bottom: 10px;
 }
 
@@ -543,104 +497,110 @@ small {
 }
 
 .grey-text {
-  color: #666 !important;
+  color: var(--secondary-color) !important;
 }
-
-/* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: var(--accent-color) !important;
 }
-
-/* .teal-text {
-  color: #0b5e86 !important;
-} */
-
-/* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: var(--accent-color) !important;
 }
-
-/* .teal {
-  background-color: #00695c !important;
-} */
 
 #contact {
-  margin-left: 120px; /* Adjusting to 10px space */
+  margin-left: 120px;
   padding: 20px;
   width: calc(100% - 210px);
-  align-items: center; /* Adjusting to 10px space */
+  align-items: center;
 }
+
 .contactform {
-  background-color: #e0f7fa;
+  background-color: var(--primary-color);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h1 {
-  color: #006064;
+  color: var(--secondary-color);
   text-align: center;
 }
+
 form {
   display: grid;
   gap: 15px;
 }
+
 .mb-3 {
   display: flex;
   flex-direction: column;
 }
+
 .mb-3 div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
+
 .mb-3 label {
   width: 150px;
 }
-.mb-3 input, .mb-3 textarea {
+
+.mb-3 input,
+.mb-3 textarea {
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--background-color);
   border-radius: 5px;
 }
-.fa-user, .fa-envelope, .fa-phone, .fa-comment {
+
+.fa-user,
+.fa-envelope,
+.fa-phone,
+.fa-comment {
   margin-right: 10px;
-  color: #006064;
+  color: var(--primary-color);
 }
+
 .form-text {
-  color: #666;
+  color: var(--secondary-color);
   font-size: 12px;
 }
+
 .form-check-input {
   margin-right: 10px;
 }
+
 .social-icons {
   text-align: center;
   margin-top: 20px;
 }
+
 .social-icons a {
   margin: 10px 120px;
-  color: #006064;
+  color: var(--primary-color);
   font-size: 24px;
   transition: color 0.3s;
 }
+
 .social-icons a:hover {
-  color: #004d40;
+  color: var(--accent-color);
 }
+
 input[type="submit"] {
-  background-color: #006064;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-input[type="submit"]:hover {
-  background-color: #004d40;
-}
 
+input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
 
 @media (min-width: 1200px) {
   #experience .container {
@@ -673,12 +633,13 @@ input[type="submit"]:hover {
     width: 100%;
   }
   nav {
-    background: #fff;
+    background: var(--background-color);
     height: 64px;
     position: absolute;
   }
-  nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    color: var(--secondary-color);
     height: 56px;
     line-height: 56px;
   }
@@ -703,7 +664,8 @@ input[type="submit"]:hover {
     width: 100%;
     position: absolute;
   }
-  .name-title>span, .name-title>a {
+  .name-title>span,
+  .name-title>a {
     position: relative;
     line-height: 20px;
   }
@@ -715,7 +677,8 @@ input[type="submit"]:hover {
     display: block;
     font-size: 14px;
   }
-  h3, .container {
+  h3,
+  .container {
     position: relative;
     top: 64px;
   }
