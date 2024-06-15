@@ -566,6 +566,82 @@ small {
   background-color: #00695c !important;
 } */
 
+#contact {
+  margin-left: 120px; /* Adjusting to 10px space */
+  padding: 20px;
+  width: calc(100% - 210px);
+  align-items: center; /* Adjusting to 10px space */
+}
+.contactform {
+  background-color: #e0f7fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #006064;
+  text-align: center;
+}
+form {
+  display: grid;
+  gap: 15px;
+}
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+}
+.mb-3 div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.mb-3 label {
+  width: 150px;
+}
+.mb-3 input, .mb-3 textarea {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.fa-user, .fa-envelope, .fa-phone, .fa-comment {
+  margin-right: 10px;
+  color: #006064;
+}
+.form-text {
+  color: #666;
+  font-size: 12px;
+}
+.form-check-input {
+  margin-right: 10px;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: #006064;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #004d40;
+}
+input[type="submit"] {
+  background-color: #006064;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+
 @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
