@@ -607,7 +607,118 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: var(--accent-color);
 }
+/* Color Palette */
+:root {
+  --primary-color: #f9fafa; /* Light Grey */
+  --secondary-color: #255876; /* Navy Blue */
+  --background-color: #d5d8d9; /* Light Grey */
+  --text-color: #333333; /* Dark Grey */
+  --accent-color: #f2b143; /* Golden Yellow */
+}
 
+/* Dark Mode Styles */
+.dark-mode {
+  --background-color: #121212; /* Dark Background */
+  --text-color: #FFFFFF; /* White Text */
+  --primary-color: #1e1e1e; /* Dark Grey */
+  --secondary-color: #767575; /* Light Grey */
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+  border: 2px solid var(--secondary-color); 
+}
+
+/* Toggle Button for Dark Mode */
+.dark-mode-toggle {
+  color: var(--text-color);
+}
+
+/* Social Icons */
+.social-icons a {
+  color: var(--secondary-color);
+  transition: color 0.3s;
+}
+
+/* Social Icons Hover Effect */
+.social-icons a:hover {
+  color: var(--accent-color);
+}
+
+/* Buttons - Read Me, Contact Us */
+.readme, .contactme {
+  color: var(--secondary-color);
+  background-color: var(--background-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.readme:hover, .contactme:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+}
+
+/* Main Body */
+body {
+  color: var(--text-color);
+}
+
+/* Main Links */
+a {
+  color: var(--primary-color);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+  background-color: var(--background-color);
+}
+
+/* Main Navigation */
+nav {
+  background-color: var(--background-color);
+}
+
+/* Main Sections */
+section {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Text Color for Dark Mode */
+.dark-mode section {
+  color: var(--background-color);
+}
+
+/* Adjustments for Dark Mode */
+.dark-mode main {
+  background-color: var(--primary-color);
+}
+
+.dark-mode nav {
+  background-color: var(--secondary-color);
+}
+
+/* Intro Text Color */
+#intro.section .container *:not(span) {
+  color: var(--text-color) !important;
+}
+
+/* About Text Color */
+#about.section .container *:not(span) {
+  color: var(--text-color) !important;
+}
+/* Color Palette */
+:root {
+  --primary-color: #f9fafa; /* Light Grey */
+  --secondary-color: #255876; /* Navy Blue */
+  --background-color: #d5d8d9; /* Light Grey */
+  --text-color: #333333; /* Dark Grey */
+  --accent-color: #f2b143; /* Golden Yellow */
+}
 @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
@@ -737,203 +848,3 @@ input[type="submit"]:hover {
     background-position-x: 30%;
   }
 }
-/* Color Palette */
-:root {
-  --primary-color: #f9fafa; /* Light Grey */
-  --secondary-color: #255876; /* Navy Blue */
-  --background-color: #d5d8d9; /* Light Grey */
-  --text-color: #333333; /* Dark Grey */
-  --accent-color: #f2b143; /* Golden Yellow */
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  --background-color: #121212; /* Dark Background */
-  --text-color: #FFFFFF; /* White Text */
-  --primary-color: #1e1e1e; /* Dark Grey */
-  --secondary-color: #3e3e3e; /* Light Grey */
-}
-
-/* Profile Picture Styles */
-.profile-pic {
-  border: 2px solid var(--secondary-color); 
-}
-
-/* Toggle Button for Dark Mode */
-.dark-mode-toggle {
-  color: var(--text-color);
-}
-
-/* Social Icons */
-.social-icons a {
-  color: var(--secondary-color);
-  transition: color 0.3s;
-}
-
-/* Social Icons Hover Effect */
-.social-icons a:hover {
-  color: var(--accent-color);
-}
-
-/* Buttons - Read Me, Contact Us */
-.readme, .contactme {
-  color: var(--secondary-color);
-  background-color: var(--background-color);
-  border: 2px solid var(--secondary-color);
-}
-
-.readme:hover, .contactme:hover {
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
-}
-
-/* Main Body */
-body {
-  color: var(--text-color);
-}
-
-/* Main Links */
-a {
-  color: var(--primary-color);
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* Main Content */
-main {
-  background-color: var(--background-color);
-}
-
-/* Main Navigation */
-nav {
-  background-color: var(--background-color);
-}
-
-/* Main Sections */
-section {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-/* Text Color for Dark Mode */
-.dark-mode section {
-  color: var(--background-color);
-}
-
-/* Adjustments for Dark Mode */
-.dark-mode main {
-  background-color: var(--primary-color);
-}
-
-.dark-mode nav {
-  background-color: var(--secondary-color);
-}
-
-/* Color Palette */
-:root {
-  --primary-color: #f9fafa; /* Light Grey */
-  --secondary-color: #255876; /* Navy Blue */
-  --background-color: #d5d8d9; /* Light Grey */
-  --text-color: #333333; /* Dark Grey */
-  --accent-color: #f2b143; /* Golden Yellow */
-}
-
-/* Dark Mode Styles */
-.dark-mode {
-  --background-color: #121212; /* Dark Background */
-  --text-color: #FFFFFF; /* White Text */
-  --primary-color: #1e1e1e; /* Dark Grey */
-  --secondary-color: #767575; /* Light Grey */
-}
-
-/* Profile Picture Styles */
-.profile-pic {
-  border: 2px solid var(--secondary-color); 
-}
-
-/* Toggle Button for Dark Mode */
-.dark-mode-toggle {
-  color: var(--text-color);
-}
-
-/* Social Icons */
-.social-icons a {
-  color: var(--secondary-color);
-  transition: color 0.3s;
-}
-
-/* Social Icons Hover Effect */
-.social-icons a:hover {
-  color: var(--accent-color);
-}
-
-/* Buttons - Read Me, Contact Us */
-.readme, .contactme {
-  color: var(--secondary-color);
-  background-color: var(--background-color);
-  border: 2px solid var(--secondary-color);
-}
-
-.readme:hover, .contactme:hover {
-  color: var(--accent-color);
-  background-color: var(--secondary-color);
-}
-
-/* Main Body */
-body {
-  color: var(--text-color);
-}
-
-/* Main Links */
-a {
-  color: var(--primary-color);
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* Main Content */
-main {
-  background-color: var(--background-color);
-}
-
-/* Main Navigation */
-nav {
-  background-color: var(--background-color);
-}
-
-/* Main Sections */
-section {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-/* Text Color for Dark Mode */
-.dark-mode section {
-  color: var(--background-color);
-}
-
-/* Adjustments for Dark Mode */
-.dark-mode main {
-  background-color: var(--primary-color);
-}
-
-.dark-mode nav {
-  background-color: var(--secondary-color);
-}
-
-/* Intro Text Color */
-#intro.section .container *:not(span) {
-  color: var(--text-color) !important;
-}
-
-/* About Text Color */
-#about.section .container *:not(span) {
-  color: var(--text-color) !important;
-}
-
