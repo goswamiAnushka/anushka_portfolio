@@ -1,4 +1,3 @@
-
 /* Color Palette */
 :root {
   --primary-color: #f9fafa; /* Light Grey */
@@ -153,11 +152,17 @@
 body {
   color: var(--text-color);
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif; /* Change font family */
 }
 
 /* Main Links */
 a {
   color: var(--primary-color);
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Blockquote */
@@ -525,6 +530,7 @@ small {
 h1 {
   color: var(--secondary-color);
   text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Change font family */
 }
 
 form {
