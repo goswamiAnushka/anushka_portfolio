@@ -9,9 +9,9 @@
   
   
   /* background-size: cover;  */
-  margin: -31px; 
-  margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  margin: -21px; 
+  margin-left: 15px;
+  border: 2px solid rgba(2, 26, 22, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -620,7 +620,7 @@ form {
   margin-top: 20px;
 }
 .social-icons a {
-  margin: 0 10px;
+  margin: 10px 120px;
   color: #006064;
   font-size: 24px;
   transition: color 0.3s;
