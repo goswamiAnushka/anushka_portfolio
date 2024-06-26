@@ -719,6 +719,184 @@ section {
   --text-color: #333333; /* Dark Grey */
   --accent-color: #f2b143; /* Golden Yellow */
 }
+/* Dark Mode Styles */
+.dark-mode {
+  --background-color: #121212; /* Dark Background */
+  --text-color: #e0e0e0; /* Light Grey Text */
+  --primary-color: #1e1e1e; /* Darker Grey */
+  --secondary-color: #8a2be2; /* Blue Violet */
+  --accent-color: #8a2be2; /* Blue Violet */
+}
+
+/* Dark Mode Specific Adjustments */
+
+/* Profile Picture Border in Dark Mode */
+.dark-mode .profile-pic {
+  border: 2px solid var(--secondary-color); 
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode .dark-mode-toggle {
+  color: var(--text-color);
+}
+
+/* Icon Button Colors in Dark Mode */
+.dark-mode .icon-btn {
+  color: var(--background-color);
+}
+
+.dark-mode .github {
+  color: var(--background-color);
+}
+
+.dark-mode .linkedin {
+  color: var(--secondary-color);
+}
+
+.dark-mode .angellist {
+  color: var(--text-color);
+}
+
+.dark-mode .icon-btn:hover {
+  color: var(--background-color);
+}
+
+.dark-mode .linkedin:hover {
+  background-color: var(--secondary-color);
+}
+
+.dark-mode .angellist:hover {
+  background-color: var(--text-color);
+}
+
+.dark-mode .github:hover {
+  background-color: var(--background-color);
+}
+
+/* Buttons in Dark Mode */
+.dark-mode .readme {
+  background: var(--background-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--background-color);
+  transition: all 0.3s ease;
+}
+
+.dark-mode .readme:hover {
+  background: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.dark-mode .contactme {
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+  transition: all 0.3s ease;
+}
+
+.dark-mode .contactme:hover {
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+}
+
+/* Main Body in Dark Mode */
+.dark-mode body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Main Links in Dark Mode */
+.dark-mode a {
+  color: var(--accent-color);
+}
+
+.dark-mode a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Blockquote in Dark Mode */
+.dark-mode blockquote {
+  border-left: 5px solid var(--accent-color);
+  color: var (--accent-color);
+}
+
+/* Navigation in Dark Mode */
+.dark-mode nav {
+  background: var(--background-color);
+}
+
+/* Main Content in Dark Mode */
+.dark-mode main {
+  background: url(../../assets/img/bg.png) repeat;
+}
+
+/* Footer in Dark Mode */
+.dark-mode footer {
+  color: var(--text-color);
+}
+
+.dark-mode footer a {
+  color: var(--text-color);
+}
+
+.dark-mode footer a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* PrismJS Styles in Dark Mode */
+.dark-mode pre[class*="language-"] {
+  background: #1e1e1e;
+  border: 1px solid var(--secondary-color);
+}
+
+.dark-mode pre[class*="language-"] code {
+  color: #dcdcdc;
+}
+
+.dark-mode code[class*="language-"] {
+  background: #1e1e1e;
+  color: #dcdcdc;
+}
+
+/* Adjustments for Light Mode */
+
+.readme, .contactme {
+  transition: all 0.3s ease;
+}
+
+.readme:hover, .contactme:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* Contact Form Styles */
+.contact-form button[type="submit"] {
+  font-size: 1.1rem; /* Adjust font size */
+  padding: 10px 20px; /* Adjust padding */
+  transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* Contact Form Input and Textarea Styles */
+.contact-form input, .contact-form textarea {
+  color: var(--text-color); /* White text */
+  background-color: var(--background-color); /* Dark background */
+  border: 1px solid var(--secondary-color); /* Blue Violet border */
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: var(--text-color); /* Light Grey placeholder text */
+}
+
+/* TypeScript Text Color */
+.language-typescript {
+  color: #32cd32; /* Lime Green */
+}
+
 @media (min-width: 1200px) {
   #experience .container {
     width: 860px;
