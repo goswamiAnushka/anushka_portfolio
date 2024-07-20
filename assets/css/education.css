@@ -4,7 +4,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
-    margin-top:65px;
+    margin-top: 50px;
     padding: 0;
     color: #333;
 }
@@ -12,12 +12,12 @@ body {
 .container {
     max-width: 1080px;
     margin: 0 auto;
-    padding:5px;
+    padding: 20px;
 }
 
 /* Section Styles */
 .section {
-    padding:5px 0;
+    padding: 20px 0;
     background-color: #f4f4f4;
     animation: fadeIn 1s ease-in-out;
 }
@@ -33,7 +33,7 @@ body {
 
 .page-title {
     text-align: center;
-    font-size:2.5em;
+    font-size: 2.5em;
     color: #f53d05;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -62,7 +62,7 @@ body {
 }
 
 .card-content {
-    padding: 10px;
+    padding: 20px;
     animation: slideUp 0.5s ease-in-out;
 }
 
@@ -119,4 +119,56 @@ body {
 .card ul li:hover {
     background-color: #ffd700;
     color: #333;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(244, 78, 66) 0%, rgb(11, 92, 130) 100%);
+    border-radius: 10px;
+}
+
+/* Hide cursor */
+html,
+html *,
+body,
+body * {
+    cursor: none;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+}
+
+/* Ensuring content has some top padding to avoid overlap with navbar */
+.container {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
 }
