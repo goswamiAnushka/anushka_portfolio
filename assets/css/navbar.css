@@ -36,7 +36,6 @@ body * {
    position:relative;
    right:40%;
 }
-
 .nav_links {
     display: flex;
     justify-content: space-around;
@@ -84,22 +83,6 @@ body * {
     display: none;
 }
 
-/*.button {
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-}
-
-.fa-sun-o {
-    font-size: 22px;
-    color: var(--yellow-color);
-}
-
-.fa-moon-o {
-    font-size: 22px;
-    color: var(--blue-color);
-}*/
 
 #click {
     display: none;

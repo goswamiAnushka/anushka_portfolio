@@ -47,4 +47,4 @@ let progress = document.getElementById('progressbar');
                 flowBar4.style.animationName = 'animateskillbar4';
             }
 
-        }
+    }

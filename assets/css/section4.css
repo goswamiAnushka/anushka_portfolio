@@ -314,3 +314,23 @@
     font-size: 15px;
   }
 }
+.gif_container img {
+  width: 700px; 
+  height: 800px; 
+}
+.arrow-container {
+  text-align:left;
+  margin-left: 250px;
+
+}
+
+.arrow-link {
+  font-size: 5rem; /* Adjust the size as needed */
+  color: rgb(255, 89, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.arrow-link:hover {
+  color: rgb(182, 53, 6);
+}
