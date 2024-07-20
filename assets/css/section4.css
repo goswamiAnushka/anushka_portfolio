@@ -340,17 +340,18 @@
   }
 }
 .gif_container img {
-  width: 600px; 
-  height: 800px; 
+  width: 450px; 
+  height: 550px; 
 }
 .arrow-container {
   text-align:left;
-  margin-left: 250px;
+  margin-left:50px;
+  margin-top: 3px;
 
 }
 
 .arrow-link {
-  font-size: 5rem; /* Adjust the size as needed */
+  font-size: 3rem; /* Adjust the size as needed */
   color: rgb(255, 89, 0);
   font-weight: bold;
   text-decoration: none;
@@ -358,4 +359,9 @@
 
 .arrow-link:hover {
   color: rgb(182, 53, 6);
+}
+.arrow_text{
+  font-size:1.5rem;
+  font: 400;
+  color: rgb(11, 88, 232);
 }
