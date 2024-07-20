@@ -10,7 +10,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-206103165-1');
     </script>
 
@@ -22,6 +21,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Contact</title>
+    <style>
+        /* Add styles for loading indicator */
+        #loading {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
 
@@ -50,7 +78,7 @@
                 </div>
                 <div class="contact-info-content">
                   <h4>Address</h4>
-                  <p>Siliguti,Dist:Darjeeling<br>West Bengal<br> India</p>
+                  <p>Siliguti, Dist: Darjeeling<br>West Bengal<br> India</p>
                 </div>
               </div>
               
@@ -130,15 +158,25 @@
 
       <div class="map-responsive" data-aos="fade-up" data-aos-once="true">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.9242512521523!2d88.43959036074881!3d26.71486681110818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4419fb14af52b%3A0xb28e00d5bf8ca650!2sAtul%20Prashad%20Sarani%2C%20Ward%2021%2C%20Rabindra%20Sarani%2C%20Siliguri%2C%20West%20Bengal%20734004!5e0!3m2!1sen!2sin!4v1721480963795!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
       </div>
+
+    </div>
 
     <footer>
         <div class="footer_line">
-          <h3>Made with <i class="fas fa-heart" aria-hidden="true"></i>by Anushka Goswami</h3>
+          <h3>Made with <i class="fas fa-heart" aria-hidden="true"></i> by Anushka Goswami</h3>
         </div>
-      </footer>
+    </footer>
 
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function() {
+            document.getElementById('loading').style.display = 'flex';
+        });
+    </script>
     <script src="/assets/js/cursor.js"></script>
     <script src="/assets/js/contact.js"></script>
 </body>
