@@ -2,18 +2,7 @@ $.get("/assets/html/navigation.html", function(data){
     $("#navbar").replaceWith(data);
 });
 
-$.get("/assets/html/loader.html", function(data){
-  $("#loading").replaceWith(data);
-});
-$(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( ".loader-wrapper" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( ".loader-wrapper" ).remove(); //makes page more lightweight 
-  });  
-}
+
 
 AOS.init();
 
@@ -46,10 +35,10 @@ AOS.init({
 
   const myTagsa = [
     'JavaScript', 'CSS', 'HTML',
-    'C', 'C++', 'React',
-    'Python', 'Java', 'git',
-    'Node.js', 'OpenCV',
-    'GCP', 'MySQL', 'jQuery',
+    'C++', 'React',
+    'Python', 'Express.js', 'git',
+    'Node.js', 'Php',
+    'MongodB', 'MySQL', 'Bootstrap',
 ];
 
 var tagCloud = TagCloud('.content', myTagsa,{
@@ -78,10 +67,10 @@ document.querySelector('.content').style.color = random_color;
 
 const myTagspa = [
   'JavaScript', 'CSS', 'HTML',
-  'C', 'C++', 'React',
-  'Python', 'Java', 'git',
-  'Node.js', 'OpenCV',
-  'GCP', 'MySQL', 'jQuery',
+    'C++', 'React',
+    'Python', 'Express.js', 'git',
+    'Node.js', 'Php',
+    'MongodB', 'MySQL', 'Bootstrap',
 ];
 
 var tagCloud = TagCloud('.content_phone', myTagspa,{
