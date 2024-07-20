@@ -27,10 +27,10 @@ AOS.init({
 
   const myTags = [
     'JavaScript', 'CSS', 'HTML',
-    'C', 'C++', 'React',
-    'Python', 'Java', 'git',
-    'Node.js', 'OpenCV',
-    'GCP', 'MySQL', 'jQuery',
+    'C++', 'React',
+    'Python', 'Express.js', 'git',
+    'Node.js', 'Php',
+    'MongodB', 'MySQL', 'Bootstrap',
 ];
 
 var tagCloud = TagCloud('.content', myTags,{
@@ -59,10 +59,10 @@ document.querySelector('.content').style.color = random_color;
 
 const myTagsp = [
   'JavaScript', 'CSS', 'HTML',
-  'C', 'C++', 'React',
-  'Python', 'Java', 'git',
-  'Node.js', 'OpenCV',
-  'GCP', 'MySQL', 'jQuery',
+  'C++', 'React',
+  'Python', 'Express.js', 'git',
+  'Node.js', 'Php',
+  'MongodB', 'MySQL', 'Bootstrap',
 ];
 
 var tagCloud = TagCloud('.content_phone', myTagsp,{
