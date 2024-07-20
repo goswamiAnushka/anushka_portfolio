@@ -106,7 +106,7 @@
     width: 0%;
   }
   100%{
-    width: 80%;
+    width: 85%;
   }
 }
 @keyframes animateskillbar1{
@@ -131,7 +131,7 @@
     width: 0%;
   }
   100%{
-    width: 70%;
+    width: 40%;
   }
 }
 @keyframes animateskillbar2{
@@ -156,7 +156,7 @@
       width: 0%;
     }
     100%{
-      width: 40%;
+      width: 65%;
     }
   }
   @keyframes animateskillbar3{
@@ -168,6 +168,31 @@
     }
   }
   
+
+#uiux-bar{
+  width: 0%; 
+  height: 10px; 
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgba(251,188,5,1) 0%, rgba(255,186,1,1) 100%);
+  animation: animateskillbar4 1s 2s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animateskillbar44{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes animateskillbar4{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 0%;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
 
   .skill_container {
@@ -315,7 +340,7 @@
   }
 }
 .gif_container img {
-  width: 700px; 
+  width: 600px; 
   height: 800px; 
 }
 .arrow-container {

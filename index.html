@@ -134,6 +134,7 @@
         </div>
       </div>
       <div class="gif_container">
+        <p>Get to know more about me</p>
         <img src="assets/images/coding2.gif" alt="Coding GIF">
       </div>
   
@@ -262,12 +263,15 @@
 </div>
   <div class="section7">
 
-    <div class="contactme_title" data-aos="fade-left" data-aos-once="true">
-      <span class="text-wrapper">
-        <span class="letters">Contact Me</span>
-        <span class="line"></span>
-      </span>
-    </div>
+    <div class="contact_page">
+
+      <div class="contactme_title" data-aos="fade-left" data-aos-once="true">
+        <span class="text-wrapper">
+          <span class="letters">Contact Me</span>
+          <span class="line"></span>
+        </span>
+      </div>
+  
       <div class="contactme">
       <div class="container_form">
         <div class="row">
@@ -280,7 +284,7 @@
               </div>
               <div class="contact-info-content">
                 <h4>Address</h4>
-                <p>Siliguti,Dist:Darjeeling<br>West Bengal<br> India</p>
+                <p>Siliguti, Dist: Darjeeling<br>West Bengal<br> India</p>
               </div>
             </div>
             
@@ -306,7 +310,7 @@
           </div>
           
           <div class="contact-form" data-aos="fade-left" data-aos-once="true">
-            <form  id="contact-form" method="POST" action="https://formsubmit.co/anushka.goswami2520@gmail.com">
+            <form id="contact-form" method="POST" action="https://formsubmit.co/anushka.goswami2520@gmail.com">
               <h2>Send a message</h2>
               <div class="input-box">
                 <input type="text" required="true" name="name" placeholder="Name">
@@ -323,12 +327,15 @@
               <div class="input-box">
                 <input type="submit" value="Send">
               </div>
-                 <input type="hidden" name="_captcha" value="false">
-                 <input type="hidden" name="_template" value="box">
-                 <input type="hidden" name="_next" value="/assets/html/thankyou.html">
-                 <input type="hidden" name="_url" value="/assets/html/contact.html">
+              
+              <!-- Hidden fields for FormSubmit.co configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="box">
+              <input type="hidden" name="_next" value="https://anushkagoswamiportfolio.netlify.app/thankyou.html"> <!-- Redirects to thank you page after submission -->
+              <input type="hidden" name="_url" value="https://anushkagoswamiportfolio.netlify.app/">
             </form>
           </div>
+          
           
         </div>
       </div>
@@ -355,8 +362,33 @@
           </li>
         </ul>
       </div>
+  
+    </div>
+
+    <div class="map-responsive" data-aos="fade-up" data-aos-once="true">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.9242512521523!2d88.43959036074881!3d26.71486681110818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4419fb14af52b%3A0xb28e00d5bf8ca650!2sAtul%20Prashad%20Sarani%2C%20Ward%2021%2C%20Rabindra%20Sarani%2C%20Siliguri%2C%20West%20Bengal%20734004!5e0!3m2!1sen!2sin!4v1721480963795!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+
+  <footer>
+      <div class="footer_line">
+        <h3>Made with <i class="fas fa-heart" aria-hidden="true"></i> by Anushka Goswami</h3>
       </div>
-      </div>
+  </footer>
+
+  <div id="loading">
+      <div class="spinner"></div>
+  </div>
+
+  <script>
+      document.getElementById('contact-form').addEventListener('submit', function() {
+          document.getElementById('loading').style.display = 'flex';
+      });
+  </script>
+  <script src="/assets/js/cursor.js"></script>
+  <script src="/assets/js/contact.js"></script>
+</body>
   <footer>
     <div class="footer_line">
       <h3>Made with <i class="fas fa-heart" aria-hidden="true"></i>by Anushka Goswami</h3>
