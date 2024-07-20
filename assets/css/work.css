@@ -3,6 +3,7 @@
 .work {
     background: var(--yellow-color);
     color: var(--font-hover) !important;
+    margin-top:40px;
 }
 
 html,
