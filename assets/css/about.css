@@ -839,3 +839,28 @@ body::-webkit-scrollbar-thumb {
     font-size: 16px;
   }
 }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.text-wrapper {
+  border-right: .1em solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  animation: blink-caret .75s step-end infinite;
+}
+
+.typing {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+

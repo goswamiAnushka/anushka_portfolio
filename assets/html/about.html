@@ -50,12 +50,46 @@
                 <circle cx="258" cy="323" r="20" fill="#EA4335" />
             </svg>
         </div>
-            <div data-aos="fade-left" class="aboutme">
-                <span class="text-wrapper">
-                    <span class="letters">Me, Myself and I</span>
-                    <span class="line"></span>
-                </span>
-            </div>
+        <div class="aboutme">
+            <span class="text-wrapper">
+                <span id="typing" class="typing"></span>
+                <span class="line"></span>
+            </span>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const words = ["Me, Myself and I", "Developer", "Coder", "Fast Learner","Tech Enthusiast"];
+                let i = 0;
+                let typingElement = document.getElementById("typing");
+        
+                function typeWord(word, callback) {
+                    let j = 0;
+                    typingElement.innerHTML = "";
+                    function typeChar() {
+                        if (j < word.length) {
+                            typingElement.innerHTML += word.charAt(j);
+                            j++;
+                            setTimeout(typeChar, 100);
+                        } else {
+                            setTimeout(callback, 500);
+                        }
+                    }
+                    typeChar();
+                }
+        
+                function startTyping() {
+                    if (i < words.length) {
+                        typeWord(words[i], function() {
+                            i++;
+                            setTimeout(startTyping, 1000);
+                        });
+                    }
+                }
+        
+                startTyping();
+            });
+        </script>
+        
         </div>
         <div class="about_content">
             <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" class="para_aboutme">
