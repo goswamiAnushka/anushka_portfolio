@@ -468,3 +468,69 @@ line-height: 1em;
     margin-top: -6%;
   }
 }
+
+.contactme .container_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+  margin: 10px;
+  margin-left: 80px;
+}
+
+.contact-info {
+  max-width: 45%;
+}
+
+.contact-info-item {
+  margin-bottom: 20px;
+}
+
+.contact-info-icon {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-info-content h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-info-content p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.contact-form {
+  max-width: 45%;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-box input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input-box input[type="submit"]:hover {
+  background-color: #45a049;
+}
