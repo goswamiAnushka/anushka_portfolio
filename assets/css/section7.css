@@ -321,9 +321,9 @@ body::-webkit-scrollbar-thumb {
 
   .contact-info,
   .contact-form {
-    width: 90%;
+    width: 86%;
     margin: 0 auto;
-    padding: 0;
+    padding: 5;
   }
 
   .contact-info {
@@ -331,8 +331,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .contact-info-icon {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
   }
 
   .contact-info-icon i {
@@ -438,12 +438,11 @@ body::-webkit-scrollbar-thumb {
 
 .contact-content {
   width: 100%;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1180px;
   display: flex;
   flex-direction: column;
 }
 
-/* Flex layout for larger screens */
 @media (min-width: 768px) {
   .contact-content {
     flex-direction: row;
