@@ -9,9 +9,8 @@
 .contact {
     background: var(--dark-orange);
     color: var(--font-hover) !important;
-    margin-top: 30px;
+    margin-top: 40px;
 }
-
 html,
 html *,
 body,
@@ -77,8 +76,8 @@ body::-webkit-scrollbar-thumb {
 .contactme {
   position: relative;
   z-index: 3;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   margin-left:30px;
@@ -324,17 +323,17 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 1280px) {
 
   .contact_page {
-    margin-top: 7%;
+    margin-top: 8%;
   }
   .contact-info-icon {
-    margin-top: 6.5%;
+    margin-top: 4.5%;
     height: 65px;
     width: 65px;
   }
 
   .contact-info-icon i {
-    font-size: 28px;
-    line-height: 65px;
+    font-size: 20px;
+    line-height: 60px;
   }
 
   .connect_withme {
@@ -349,12 +348,12 @@ body::-webkit-scrollbar-thumb {
   }
 
   .contact-form {
-    width: 43%;
-    right: 3%;
+    width: 20%;
+    right:-2%;
   }
 
   .contact-info {
-    width: 45%;
+    width: 40%;
     left: 3%;
   }
 
@@ -424,7 +423,7 @@ body::-webkit-scrollbar-thumb {
 
   .contact-form {
     right: 0;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .connect_title {
@@ -446,11 +445,11 @@ body::-webkit-scrollbar-thumb {
   .contact-info-icon {
     margin-top: 5%;
     height: 55px;
-    width: 55px;
+    width: 50px;
   }
 
   .contact-info-icon i {
-    font-size: 24px;
-    line-height: 55px;
+    font-size: 20px;
+    line-height: 50px;
   }
 }
