@@ -8,8 +8,7 @@
 .mywork {
   position: relative;
   font-weight: 600;
-  font-size: 3.5em;
-  margin-top: 2%;
+  font-size: 4em;
   left: 6%;
   color: #FFBA01;
 }
@@ -33,6 +32,7 @@ a, a:hover {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+
 }
 
 .item-bg {
@@ -85,7 +85,7 @@ a, a:hover {
   z-index: 12;
 }
 .project-slider__arrow {
-  background: #fff;
+  background: #f7f5f5;
   border: none;
   display: inline-flex;
   width: 50px;
@@ -423,4 +423,29 @@ a, a:hover {
     height: 150px;
     margin-left: 0%;
   }
+}
+
+
+.project-slider__arrow:hover {
+  background-color: #FFBA01;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.project-slider__arrow .icon {
+  width: 23px;
+  height: 26px;
+  fill: #101010;
+}
+
+.project-slider__arrow.project-slider-prev {
+  left: 0;
+}
+
+.project-slider__arrow.project-slider-next {
+  right: 0;
+}
+
+.project-slider__arrow svg {
+  width: 22px;
+  height: 22px;
 }

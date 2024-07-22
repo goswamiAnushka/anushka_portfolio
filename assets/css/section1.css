@@ -15,28 +15,23 @@
       font-family:'Poppins', sans-serif;
       display: grid;
       grid-template-columns: 55% auto;
-      margin-top: 10vh;
+      margin-top: 7vh;
       position: relative;
     }
 
-    .boxes {
-      right: 0%;
-      width: 35vmax;
-      position: relative;
-      margin: 0 auto;
-      display: flex;
-    }
-
+    
     .animated_title {
       color: #222;
       font-family: 'Poppins', sans-serif;
-      letter-spacing: 1.3px;
-      height: 40vmax;
+      letter-spacing: 1.2px;
+      height: 35vmax;
       position: relative;
       width: 50vmax;
       margin: 0 auto;
       display: flex;
-      left: 4%;
+      left: 10%;
+      margin-left: 30px;
+   
     }
 
     .animated_title > div {
@@ -48,7 +43,7 @@
 
     .animated_title > div div {
       font-size: 5vmax;
-      font-weight: 605;
+      font-weight: 580;
       padding: 2vmin 0;
       position: absolute;
     }
@@ -93,8 +88,8 @@
     }
 
     .animated_title > div.text_bottom div {
-      animation: showBottomText 0.5s;
-      animation-delay: 1.2s;
+      animation: showBottomText 0.4s;
+      animation-delay: 0.7s;
       animation-fill-mode: forwards;
       top: 0;
       transform: translate(0, -100%);
@@ -119,7 +114,7 @@
     .box-bounce {
       transform: scaleY(1) translateY(0px);
       transform-origin: 50% 100%;
-      transition: .2s ease-in-out;
+      transition: .1s ease-in-out;
     }
     .text-bounce {
       transform: scaleY(1) translateY(0px);
@@ -335,22 +330,32 @@
     .anu_img {
       animation: image-bounce-in-right 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
       position: relative;
-      right: -10px; /* Shift the image to the right by 10 pixels */
+      right: -8%; 
+      margin-top:20px;
+      width: 400px;
+      height: 400px;
+
     }
 
     @media only screen and (max-width: 1024px) {
-      .boxes {
-        display: block;
-        top: 5%;
-        width: 32vmax;
+     
+      .anu_img {
+        animation: image-bounce-in-right 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        position: relative;
+        right: -8%; 
+        width: 350px;
+        height:350px;
+  
       }
+  
 
       .animated_title {
-        width: 40vmax;
+        width: 35vmax;
+        margin-right: 100px;
       }
 
       .animated_title > div div {
-        font-size: 4vmax;
+        font-size: 4.5vmax;
       }
     }
 
@@ -363,10 +368,10 @@
         left: 0%;
       }
 
-      .boxes {
-        display: block;
-        width: 45vmax;
-        top: -10%;
+      
+      .anu_img {
+        width: 57vmax;
+        height:57vmax;
       }
     }
 
@@ -378,12 +383,14 @@
       .animated_title > div div {
         font-size: 4vmax;
       }
-
-      .boxes {
-        width: 40vmax;
-        top: -15%;
+        
+      .anu_img {
+        width: 50vmax;
+        height:50vmax;
       }
-    }
+    
+      }
+    
 
     @media only screen and (max-width: 420px) {
       .animated_title {
@@ -393,21 +400,26 @@
       .animated_title > div div {
         font-size: 3.7vmax;
       }
+      
+      .anu_img {
+        width: 48vmax;
+        height:48vmax;
+      }
     }
 
     @media only screen and (max-width: 360px) {
       .animated_title {
-        left: 3%;
+        left: 5%;
         width: 35vmax;
       }
 
       .animated_title > div div {
-        font-size: 3.6vmax;
+        font-size: 3.4vmax;
       }
 
-      .boxes {
-        width: 30vmax;
-        top: -20%;
+      .anu_img {
+        width: 45vmax;
+        height:45vmax;
       }
     }
   
