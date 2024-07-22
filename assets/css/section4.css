@@ -365,9 +365,7 @@
     font-size: 22px;
   }
 
-  .container {
-    height: 8px;
-  }
+ 
 
   #fe-bar {
     height: 8px;
@@ -380,10 +378,10 @@
   #cp-bar {
     height: 8px;
   }
-
-  #uiux-bar {
-    height: 8px;
-  }
+.gif_container{
+  top: 10%;
+}
+ 
 }
 
 @media only screen and (max-width: 991px) {
