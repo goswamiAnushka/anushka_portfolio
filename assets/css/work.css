@@ -3,7 +3,7 @@
 .work {
     background: var(--yellow-color);
     color: var(--font-hover) !important;
-    margin-top:40px;
+  
 }
 
 html,
@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 
 .work_page {
   font-family: "Poppins", sans-serif;
+  margin-top:90px;
 }
 
 .mywork {

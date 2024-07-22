@@ -9,6 +9,7 @@
 .contact {
     background: var(--dark-orange);
     color: var(--font-hover) !important;
+    margin-top: 30px;
 }
 
 html,
@@ -16,6 +17,7 @@ html *,
 body,
 body * {
   cursor: none !important;
+ 
 }
 
 body::-webkit-scrollbar {
