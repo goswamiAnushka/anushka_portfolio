@@ -438,4 +438,32 @@ a, a:hover {
   }
 }
 
+.project-slider {
+  position: relative;
+}
 
+.project-slider__ctr {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.project-slider__arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-slider__arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.project-slider__arrow svg {
+  fill: #000; /* Adjust color as needed */
+}
